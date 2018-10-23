@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Star Wars Database</title>
+    <script src="js/app.js"></script>
+
+  </head>
+  <body>
+    <form id="new-jedi-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <fieldset>
+            <legend>
+              <label for="name" class="primary">Full Name</label>
+            </legend>
+          <input type="text" id="name" required/>
+        </fieldset>
+        </div>
+
+        <div class="form-item">
+          <fieldset>
+            <legend>
+              <label for="rank" class="primary">Rank</label>
+
+            </legend>
+          <select id="rank" required>
+            <option value="" disabled selected>Choose a rank</option>
+            <option value="Youngling">Youngling</option>
+            <option
+            value="Padawan"
+            >Padawan</option>
+            <option value="Knight">Knight</option>
+            <option value="Master">Master</option>
+          </select>
+        </fieldset>
+       </div>
+
+        <div class="form-item">
+          <fieldset>
+            <legend>Select form(s):</legend>
+
+          <label for="form1">Form 1: Shii Cho</label>
+          <input type="checkbox" id="forms" name="forms" value ="Form 1: Shii Cho">
+
+          <label for="form2">Form 2: Makashi</label>
+          <input type="checkbox" id="forms" name="forms" value="Form 2: Makashi">
+
+          <label for="form3">Form 3: Soresu</label>
+          <input type="checkbox" id="forms" name="forms" value="Form 3: Soresu">
+
+          <label for="form4">Form 4: Ataru</label>
+          <input type="checkbox" id="forms" name="forms" value="Form 4: Ataru">
+
+          <label for="form5a">Form 5a: Shien</label>
+          <input type="checkbox" id="forms" name="forms" value="Form 5a: Shien">
+
+          <label for="form5b">Form 5b: Djem So</label>
+          <input type="checkbox" id="forms" name="forms" value="Form 5b: Djem So">
+
+          <label for="form6">Form 6: Niman</label>
+          <input type="checkbox" id="forms" name="forms" value="Form 6: Niman">
+
+          <label for="form7a">Form 7a: Juyo </label>
+          <input type="checkbox" id="forms" name="forms" value="Form 7a: Juyo">
+
+          <label for="form7b">Form 7b: Vaapad</label>
+          <input type="checkbox" id="forms" name="forms" value="Form 7b: Vaapad">
+        </fieldset>
+        </div>
+
+        <div class="form-item">
+          <fieldset>
+
+          <legend>Select a lightsaber colour:</legend>
+
+          <label for="bladecolour1">Blue</label>
+          <input type="radio" id="bladecolour1" name="lightsaberColour" value="Blue">
+
+          <label for="bladecolour2">Green</label>
+          <input type="radio" id="bladecolour2" name="lightsaberColour" value="Green">
+
+          <label for="bladecolour3">Yellow</label>
+          <input type="radio" id="bladecolour3" name="lightsaberColour" value="Yellow">
+
+          <label for="bladecolour4">Purple</label>
+          <input type="radio" id="bladecolour4" name="lightsaberColour" value="Purple">
+        </div>
+      </fieldset>
+
+        <div class="form-item">
+          <fieldset>
+            <legend>Are they a member of the Jedi Council?</legend>
+
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="council" value="Yes">
+
+          <label for="no">No</label>
+          <input type="radio" name="council" value="No" checked>
+        </fieldset>
+        </div>
+      </div>
+      <button type="submit">Save Jedi</button>
+    </form>
+
+    <h1>List of Jedi</h1>
+    <div id="jedi-list"></div>
+      <button id="delete-all" type="button" name="button">Delete All</button>
+
+
+  </body>
+</html>
